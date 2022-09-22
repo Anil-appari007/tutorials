@@ -3,7 +3,8 @@ sudo usermod -aG docker ubuntu
 newgrp docker
 
 
-
+###     After installing docker & loading newgrp
+###     You can save the below data in shell_script and execute it.
 
 curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x kubectl
