@@ -4,7 +4,8 @@ newgrp docker
 
 
 ###     After installing docker & loading newgrp
-###     You can save the below data in shell_script and execute it.
+###     You can save the below commands in shell_script and execute it.
+###     $ bash install_minikube.sh
 
 curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x kubectl
@@ -65,9 +66,9 @@ kubectl expose deployment hello-minikube --type=NodePort --port=8080
 
 ###     https://kubernetes.io/docs/tutorials/hello-minikube/
 
-kubectl create deployment hello-node --image=registry.k8s.io/echoserver:1.4
-kubectl expose deployment hello-node --type=LoadBalancer --port=8080
-minikube service hello-node
+#   kubectl create deployment hello-node --image=registry.k8s.io/echoserver:1.4
+#   kubectl expose deployment hello-node --type=LoadBalancer --port=8080
+#   minikube service hello-node
 
 
 ###     https://github.com/kubernetes/kubernetes/issues/112135
